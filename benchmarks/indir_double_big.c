@@ -19,8 +19,10 @@ int main() {
         B[i] = i;
     }
 
-    // double indirection
-    for (int i = 0; i < 1000000; ++i) {
-        x = B[A[i]];
+    for (int y = 0; y < 10000; ++y) {
+        // double indirection
+        for (int i = 0; i < 1000000; ++i) {
+            x = B[A[i]];
+        }
     }
 }
