@@ -346,7 +346,7 @@ extern "C" ::llvm::PassPluginLibraryInfo LLVM_ATTRIBUTE_WEAK llvmGetPassPluginIn
         [](StringRef Name, FunctionPassManager &FPM,
         ArrayRef<PassBuilder::PipelineElement>) {
           if(Name == "swprefetchpass"){
-            // FPM.addPass(SwPrefetchPass());
+            FPM.addPass(SwPrefetchPass());
             return true;
           }
           return false;
