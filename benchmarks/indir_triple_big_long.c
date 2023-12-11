@@ -30,7 +30,7 @@ int main() {
         C[i*2 + 1] = (SIZE-1)-i*2;
     }
 
-    for (int y = 0; y < 1000; ++y) {
+    for (int y = 0; y < 10000; ++y) {
         // triple indirection
         for (int i = 0; i < SIZE/2; ++i) {
             x = C[B[A[i]]];
