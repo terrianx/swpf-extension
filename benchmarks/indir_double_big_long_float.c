@@ -23,7 +23,7 @@ int main() {
         // double indirection
         for (int i = 0; i < 1000000; ++i) {
             x += B[A[i]];
-            
+
             // some overlapping work to exploit prefetching
             float y = (float) x;
             float z = y * x;
